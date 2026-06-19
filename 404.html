@@ -6,11 +6,33 @@
     <title>Rabbit Finance — General Ledger Workbench</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;650;700&family=JetBrains+Mono:wght@400;500;600&family=Carlito:wght@400;700&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/carrot-demo/assets/index-BsCYPUIH.js"></script>
-    <link rel="stylesheet" crossorigin href="/carrot-demo/assets/index-DLrxW2iQ.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;650;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Carlito:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/carrot-demo/assets/index-CpTJ1J1-.js"></script>
+    <link rel="stylesheet" crossorigin href="/carrot-demo/assets/index-Cfefwt9B.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="boot-loader" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:#FBFBF8;font-family:'Inter Tight',system-ui,sans-serif;">
+        <style>
+          @keyframes bootGlow{0%,100%{filter:drop-shadow(0 0 5px rgba(255,122,31,.4)) drop-shadow(0 0 10px rgba(15,81,50,.25))}50%{filter:drop-shadow(0 0 16px rgba(255,122,31,.85)) drop-shadow(0 0 26px rgba(255,122,31,.45))}}
+          @keyframes bootFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+          @keyframes bootHalo{0%,100%{transform:translate(-50%,-50%) scale(.85);opacity:.3}50%{transform:translate(-50%,-50%) scale(1.25);opacity:.65}}
+          @keyframes bootWord{0%,100%{opacity:.78}50%{opacity:1}}
+          @keyframes bootShimmer{0%{left:-40%}100%{left:100%}}
+        </style>
+        <div style="position:relative;width:140px;height:140px;display:flex;align-items:center;justify-content:center;">
+          <div style="position:absolute;left:50%;top:50%;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(255,122,31,.45) 0%,rgba(255,122,31,0) 68%);animation:bootHalo 2s ease-in-out infinite;"></div>
+          <svg viewBox="0 0 64 64" width="96" height="96" style="position:relative;animation:bootGlow 2s ease-in-out infinite,bootFloat 3s ease-in-out infinite;">
+            <path d="M30 18 C 28 8, 18 6, 16 14 C 14 8, 6 10, 8 18 C 4 16, 2 24, 10 26 C 6 30, 14 34, 18 28 C 20 32, 30 30, 30 22 Z" fill="#0F5132" stroke="#0E1A15" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M22 20 L40 20 L34 60 Q31 64, 28 60 Z" fill="#FF7A1F" stroke="#0E1A15" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M26 30 L36 30 M27 38 L35 38 M28 46 L34 46" stroke="#C25A0F" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div style="animation:bootWord 2s ease-in-out infinite;font-weight:800;font-size:17.5px;letter-spacing:.5px;color:#FF7A1F;">L·O·A·D·I·N·G</div>
+        <div style="position:relative;width:160px;height:3px;border-radius:99px;background:rgba(255,122,31,.15);overflow:hidden;">
+          <div style="position:absolute;top:0;height:100%;width:40%;border-radius:99px;background:#FF7A1F;animation:bootShimmer 1.3s ease-in-out infinite;"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
